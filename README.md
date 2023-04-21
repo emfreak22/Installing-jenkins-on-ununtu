@@ -1,2 +1,2 @@
-# Installing-jenkins-on-ununtu
-Installatiojn of jenkins on ubuntu
+# Installing-Jenkins-On_Ubuntu
+Installation of jenkins on ubuntu
