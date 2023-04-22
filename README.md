@@ -44,3 +44,14 @@ sudo ufw enable`
 Once done, test whether the firewall is active using this command:
 
 `sudo ufw status`
+
+Make Sure you open port 8080 in your aws security group which is assigned to jenkins server.
+Go to AWS console
+
+Click Security Group and select the security group that you have assigned to your EC2 instance.
+
+Click Edit Inbound Rules
+
+Add a Custom TCP Rule and add 8080 in the Port Range.
+
+
