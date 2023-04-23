@@ -12,16 +12,13 @@ Jenkins support only jdk8 and jdk11, so we need to install jdk11 on our instance
 Now, we will install Jenkins on our system, the first command is used to add the key to our system. 
 Issue the following four commands in sequence to initiate the installation from the Jenkins repository:
 
-` curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io.key | sudo tee \
-/usr/share/keyrings/jenkins-keyring.asc > /dev/null`
-
-`echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
-  https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
-  /etc/apt/sources.list.d/jenkins.list > /dev/null`
-
-`sudo apt-get update`
-
-`sudo apt-get install jenkins`
+curl -fsSL https://pkg.jenkins.io/debian/jenkins.io-2023.key | sudo tee \
+  /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] \
+  https://pkg.jenkins.io/debian binary/ | sudo tee \
+  /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
 
 Congratulations, jenkins has been installed, but now you need to start jenkins service using command
 
